@@ -1,0 +1,38 @@
+{
+  "name": "encrypted-arweave-service",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "arweave",
+    "lit-protocol",
+    "encryption",
+    "blockchain",
+    "storage"
+  ],
+  "author": "askwhyharsh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askwhyharsh/lit-ar-enc-dec.git"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "arweave": "^1.15.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "jest": "^29.7.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "ts-jest": "^29.2.5"
+  }
+}
