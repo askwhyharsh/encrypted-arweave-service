@@ -1,18 +1,21 @@
 {
   "name": "encrypted-arweave",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
   "keywords": [
     "arweave",
-    "lit-protocol",
     "encryption",
-    "blockchain",
-    "storage"
+    "encrypted-arweave"
   ],
   "author": "askwhyharsh",
   "license": "MIT",

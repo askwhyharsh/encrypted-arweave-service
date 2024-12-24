@@ -1,5 +1,7 @@
 import Arweave from 'arweave';
 import { EncryptionService } from './encryptionService';
+import path from 'path';
+import { readFileSync } from 'fs';
 
 export class EncryptedArweaveService {
     private arweave: Arweave;
@@ -13,7 +15,10 @@ export class EncryptedArweaveService {
             protocol: 'https'
         });
         
-        this.wallet = require(walletPath);
+        // this.wallet = require(walletPath);
+        // Read the wallet file directly instead of using require
+        const resolvedWalletPath = path.resolve(walletPath);
+        this.wallet = JSON.parse(readFileSync(resolvedWalletPath, 'utf-8'));
         this.encryptionService = new EncryptionService(encryptionKey);
     }
 
@@ -58,7 +63,7 @@ export class EncryptedArweaveService {
 
             // Decrypt the data
             return this.encryptionService.decrypt(data as string);
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error fetching from Arweave:', error);
             throw error;
         }
