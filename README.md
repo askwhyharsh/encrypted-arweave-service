@@ -5,13 +5,13 @@ A TypeScript package for encrypted data storage on Arweave using Lit Protocol.
 ## Installation
 
 ```bash
-npm install lit-ar-enc-dec
+npm install encrypted-arweave
 ```
 
 ## Usage
 
 ```typescript
-import { EncryptedArweaveService } from 'lit-ar-enc-dec';
+import { EncryptedArweaveService } from 'encrypted-arweave';
 // path to wallet.json and encryption key
 const arweaveService = new EncryptedArweaveService('wallet.json', 'test-encryption-key-32-chars-long!!');
 

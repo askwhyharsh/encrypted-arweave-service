@@ -1,6 +1,5 @@
 {
-  "name": "encrypted-arweave-service",
-  "type": "module",
+  "name": "encrypted-arweave",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/askwhyharsh/lit-ar-enc-dec.git"
+    "url": "git+https://github.com/askwhyharsh/encrypted-arweave-service.git"
   },
   "dependencies": {
     "@types/crypto-js": "^4.2.2",
