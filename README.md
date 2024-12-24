@@ -1,6 +1,6 @@
-# lit-ar-enc-dec
+# encrypted-arweave
 
-A TypeScript package for encrypted data storage on Arweave using Lit Protocol.
+A TypeScript package for encrypted data storage using CryptoJS and Arweave.
 
 ## Installation
 
